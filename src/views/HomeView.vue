@@ -1,9 +1,5 @@
 <template>
   <button type="button" class="btn me-5" @click="enterPage('/chatroomHome/chatroomList')">討論區列表</button>
-  <button type="button" class="btn me-5" @click="enterPage('/workHome/workFolderList')">作品展示</button>
-  <button type="button" class="btn me-5" @click="enterPage('/pushNotification')">firebase測試</button>
-  <button type="button" class="btn me-5" @click="enterPage('/test1')">test1</button>
-  <button type="button" class="btn me-5" @click="enterPage('/test2')">test2</button>
 
 <div class="border mb-5 p-5">
   <p>影片</p>
@@ -128,6 +124,13 @@
   <p>測試13: 測試 禁用移動端長按圖片出現選單</p>
   <p>使用背景圖</p>
   <div style="background-image:url('https://picsum.photos/500/300');width:100px;height:100px;background-position:center center;"></div>
+</div>
+
+<div class="my-5">
+  <p>測試1: 測試 檔案上傳類型</p>
+  <input type="file" accept="file_extension">
+  <input type="file" accept="media_type">
+  <input type="file" accept="image/*,video/*" capture="false">
 </div>
 
 </template>
