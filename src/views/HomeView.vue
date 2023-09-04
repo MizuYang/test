@@ -112,6 +112,23 @@
   <img src='https://picsum.photos/500/300'
        width="100" alt='' style="-webkit-touch-callout:none;">
 </div>
+<div class="my-5">
+  <p>測試12: 測試 禁用移動端長按圖片出現選單</p>
+  <p>@click.prevent</p>
+  <img src='https://picsum.photos/500/300'
+       width="100" alt='' @click.prevent>
+</div>
+<div class="my-5">
+  <p>測試13: 測試 禁用移動端長按圖片出現選單</p>
+  <p>pointer-events: none;</p>
+  <img src='https://picsum.photos/500/300'
+       width="100" alt='' style="pointer-events: none;">
+</div>
+<div class="my-5">
+  <p>測試13: 測試 禁用移動端長按圖片出現選單</p>
+  <p>使用背景圖</p>
+  <div style="background-image:url('https://picsum.photos/500/300');width:100px;height:100px;background-position:center center;"></div>
+</div>
 
 </template>
 
