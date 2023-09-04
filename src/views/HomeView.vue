@@ -131,6 +131,7 @@
   <input type="file" accept="file_extension">
   <input type="file" accept="media_type">
   <input type="file" accept="image/*,video/*" capture="false">
+  <input type="file" accept="image/png, image/jpeg" capture="filesystem">
 </div>
 
 </template>
