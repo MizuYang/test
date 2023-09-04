@@ -63,6 +63,55 @@
        @contextmenu.prevent
        width="100" alt=''>
 </div>
+<div class="my-5">
+  <p>測試8: 測試 禁用移動端長按圖片出現選單</p>
+  <pre>
+    <code>{{ `@touchstart.prevent` }}</code></pre>
+    <img src='https://picsum.photos/500/300'
+         @touchstart.prevent
+         width="100" alt=''>
+</div>
+<div class="my-5">
+  <p>測試9: 測試 禁用移動端長按圖片出現選單</p>
+  <p>加一層遮罩在圖片上</p>
+  <div class="position-relative">
+    <img src='https://picsum.photos/500/300'
+         width="100" alt=''>
+    <span class="position-absolute top-0 bottom-0 start-0 end-0 z110"
+          style="background-color:rgba(0,0,0,40%)"></span>
+  </div>
+  <p>遮罩加上 @contextmenu.prevent</p>
+  <div class="position-relative">
+    <img src='https://picsum.photos/500/300'
+         width="100" alt=''>
+    <span class="position-absolute top-0 bottom-0 start-0 end-0 z110"
+          @contextmenu.prevent
+          style="background-color:rgba(0,0,0,40%)"></span>
+  </div>
+
+  <p>遮罩加上 @touchstart.prevent</p>
+  <div class="position-relative">
+    <img src='https://picsum.photos/500/300'
+         width="100" alt=''>
+    <span class="position-absolute top-0 bottom-0 start-0 end-0 z110"
+          @touchstart.prevent
+          style="background-color:rgba(0,0,0,40%)"></span>
+  </div>
+</div>
+<div class="my-5">
+  <p>測試10: 測試 禁用移動端長按圖片出現選單</p>
+  <p>-webkit-touch-callout:none;(加在父層)</p>
+  <div style="-webkit-touch-callout:none;">
+    <img src='https://picsum.photos/500/300'
+         width="100" alt=''>
+  </div>
+</div>
+<div class="my-5">
+  <p>測試11: 測試 禁用移動端長按圖片出現選單</p>
+  <p>-webkit-touch-callout:none;(加在圖片)</p>
+  <img src='https://picsum.photos/500/300'
+       width="100" alt='' style="-webkit-touch-callout:none;">
+</div>
 
 </template>
 
